@@ -1,0 +1,13 @@
+#contenido {
+	border: 1px solid rgb(226, 31, 31);
+	width: 105%;
+	margin:70px auto;
+	padding: 15px;
+	color: rgb(2, 1, 1)
+}
+
+/*
+body{
+	background-image: url(/public/img/pexels-pixabay-417458.jpg);
+} 
+*/ 
