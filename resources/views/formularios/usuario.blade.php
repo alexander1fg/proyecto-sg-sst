@@ -33,11 +33,19 @@
 <body>
 	<section id="contenido">
 		<form>
-			<h3>Usuarios</h3>
-			<div class="mb-3 row">
-				<label class="col-sm-2 col-form-label">Nombre de usuario</label>
-				<div class="col-sm-10">
-					<input type="text" class="form-control" id="nombre">
+			<h3>Usuarios</h3> 
+			<div class="form-group row">
+				<label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
+
+				<div class="col-md-6">
+					<input id="name" type="text" class="form-control @error('name') is-invalid @enderror"
+						name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+					@error('name')
+						<span class="invalid-feedback" role="alert">
+							<strong>{{ $message }}</strong>
+						</span>
+					@enderror
 				</div>
 			</div>
 			<div class="mb-3 row">
@@ -116,6 +124,8 @@
 		</table>
 	</section>
 </body>
+
+
 
 </html>
 <script>
