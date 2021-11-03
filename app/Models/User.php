@@ -41,4 +41,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+
+    //Aqui podemos recuperar una imagen o foto del usuario desde la base de datos
+    public function adminlte_image()
+    {
+        return 'https://picsum.photos/300/300';
+    }
+
+    public function adminlte_desc(){
+        return'Administrador';
+    }
+
+
 }

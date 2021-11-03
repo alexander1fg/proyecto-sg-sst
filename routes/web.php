@@ -21,5 +21,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/usuario', [App\Http\Controllers\HomeController::class, 'usuario'])->name('usuario');
+
+//Rutas de los formularios 
+Route::get('/usuario', [App\Http\Controllers\ControllerFormularios::class, 'index' ])->name('formularios.usuario');
+
 
