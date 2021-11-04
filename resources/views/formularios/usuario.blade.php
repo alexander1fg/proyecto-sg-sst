@@ -17,57 +17,57 @@
 	<body>
 		<section id="contenido">
 			<form class="row">
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Nombre de usuario</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-3">
+					<label class="col-form-label">Nombre de usuario</label>
+					<div>
 						<input type="text" class="form-control" id="nombre">
 					</div>
 				</div>
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Nombre</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-5 ">
+					<label class="col-form-label">Nombre</label>
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 ">
+				<div class="mb-3 col-sm-4">
 					<label class="col-sm-2 col-form-label">Apellido</label>
-					<div class="col-sm-10">
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Cédula</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-3 ">
+					<label class="col-form-label">Cédula</label>
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Teléfono</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-3 ">
+					<label class="col-form-label">Teléfono</label>
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Celular</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-3 ">
+					<label class="col-form-label">Celular</label>
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Dirección</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-9">
+					<label class="col-form-label">Dirección</label>
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Contraseña</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-3 ">
+					<label class="col-form-label">Contraseña</label>
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 ">
-					<label class="col-sm-2 col-form-label">Rol en el sistema</label>
-					<div class="col-sm-10">
+				<div class="mb-3 col-sm-3 ">
+					<label class="col-form-label">Rol en el sistema</label>
+					<div >
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
