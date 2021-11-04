@@ -225,7 +225,7 @@ return [
     */
 
     'menu' => [
-        
+
         // Navbar items:
         [
             'type'         => 'navbar-search',
@@ -252,9 +252,15 @@ return [
 
         //Links activos
         [
+            'text' => 'Dashboard',
+            'route'=> 'home',
+            'icon'=>'fas fa-fw fa-tachometer-alt',
+        ],
+
+        [
             'text' => 'usuarios',
-            'route'=> 'formularios.usuario',
-            'icon'=>'fas fa fa-users',
+            'route'=> 'usuarios.createU',
+            'icon'=>'fas fa-fw fa-users',
             'label'       => 'Nuevo',
             'label_color' => 'danger',
         ],
@@ -266,11 +272,11 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'ADMINISTRADOR'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Categorias',
+            'route'  => 'categorias.index',
+            'icon' => 'fab fa-fw fa-buffer',
         ],
         [
             'text' => 'change_password',

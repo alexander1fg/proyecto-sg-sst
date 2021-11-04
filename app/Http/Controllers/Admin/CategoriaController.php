@@ -1,10 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Categoria;
 
-class ControllerFormularios extends Controller
+
+class CategoriaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +16,9 @@ class ControllerFormularios extends Controller
      */
     public function index()
     {
-        //
+        $categoria = Categoria::all();
+
+        return view('categorias.index', compact('categoria'));
     }
 
     /**
@@ -23,7 +28,7 @@ class ControllerFormularios extends Controller
      */
     public function create()
     {
-        //
+        return view('categorias.create');
     }
 
     /**
@@ -34,39 +39,45 @@ class ControllerFormularios extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $request = validator([
+            'name' => 'required',
+            'slug' => 'required|unique:categorias'
+        ]);
+
+        
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Categoria $categoria)
     {
-        //
+        return view('categorias.show',compact('categoria'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Categoria $categoria)
     {
-        //
+        return view('categorias.edit',compact('categoria'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  int  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Categoria $categoria)
     {
         //
     }
@@ -74,10 +85,10 @@ class ControllerFormularios extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Categoria $categoria)
     {
         //
     }
