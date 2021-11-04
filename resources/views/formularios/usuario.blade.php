@@ -16,56 +16,56 @@
 	@section('content')
 	<body>
 		<section id="contenido">
-			<form>
-				<div class="mb-3 row">
+			<form class="row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Nombre de usuario</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="nombre">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Nombre</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Apellido</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Cédula</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Teléfono</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Celular</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Dirección</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Contraseña</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
 					</div>
 				</div>
-				<div class="mb-3 row">
+				<div class="mb-3 ">
 					<label class="col-sm-2 col-form-label">Rol en el sistema</label>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" id="email">
